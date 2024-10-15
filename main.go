@@ -35,6 +35,9 @@ func parseRecipes() ([]Recipe, error) {
 	recipes := []Recipe{}
 
 	markdown := goldmark.New(
+		goldmark.WithParserOptions(
+			parser.WithAutoHeadingID(),
+		),
 		goldmark.WithExtensions(
 			meta.Meta,
 			emoji.Emoji,
