@@ -134,7 +134,7 @@ var index = template.Must(template.New("index").Parse(`
 	<head>
 		<title>Recept</title>
 		<style>	
-			h1 { margin-bottom: 0; }
+			h2 { margin-bottom: 0; }
 			a:link { color: #7CAF3C; }
 			a:visited { color: #7CAF3C; }
 			a:hover { color: #000000; }
@@ -161,10 +161,10 @@ var index = template.Must(template.New("index").Parse(`
 	</head>
 	<body>
 		<main>
-			<h1>Recept</h1>
+			<h2>Recept</h2>
 			<ul>
 				{{ range . }}
-				<li><h2><a href="{{.Path}}">{{index .Meta "Titel"}}</a></h2></li>
+				<li><h3><a href="{{.Path}}">{{index .Meta "Titel"}}</a></h3></li>
 				{{ end }}
 			</ul>
 		</main>
@@ -178,7 +178,7 @@ var recept = template.Must(template.New("recept").Parse(`
 		<title>Recept: {{ index .Meta "Titel" }}</title>
 		<meta name="description" content="{{ index .Meta "Beskrivning"}}">
 		<style>	
-			h1 { margin-bottom: 0; }
+			h1 { margin: 0; }
 			a:link { color: #7CAF3C; }
 			a:visited { color: #7CAF3C; }
 			a:hover { color: #000000; }
@@ -186,6 +186,7 @@ var recept = template.Must(template.New("recept").Parse(`
 			li { margin-bottom: 1em; }
 			li::marker { font-weight: 900; }
 			img { width: 100%; }
+			em { font-weight: 300; }			
 			
 			body {
 				font-size: clamp(32px, 4.5dvw, 48px);
@@ -204,7 +205,8 @@ var recept = template.Must(template.New("recept").Parse(`
 	<body>
 		<main>
 			{{ if index .Meta "Titel" }}
-			<h1><a href="/">Recept</a></h1><h1>{{ index .Meta "Titel" }}</h1>
+			<h2><a href="/">Recept</a></h2>
+			<h1>{{ index .Meta "Titel" }}</h1>
 			{{end}}
 			{{ if index .Meta "Bild" }}
 			<img src="{{index .Meta "Bild" }}">
