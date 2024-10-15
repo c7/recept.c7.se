@@ -12,7 +12,7 @@ import (
 
 	goldmark "github.com/yuin/goldmark"
 	meta "github.com/yuin/goldmark-meta"
-	"github.com/yuin/goldmark/parser"
+	parser "github.com/yuin/goldmark/parser"
 )
 
 //go:embed all:content
