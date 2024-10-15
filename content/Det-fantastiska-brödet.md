@@ -1,7 +1,6 @@
 ---
 Titel: Det fantastiska brödet
 Beskrivning: Det här receptet kommer från Anna Bergenström
-Bild: /content/Det-fantastiska-brödet/bild.jpg
 Taggar:
     - bröd
 ---

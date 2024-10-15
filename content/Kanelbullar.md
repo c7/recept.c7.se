@@ -1,7 +1,6 @@
 ---
 Titel: Kanelbullar
 Beskrivning: Baka goda och saftiga kanelbullar med detta perfekta kanelbullerecept.
-Bild: /content/Kanelbullar/bild.jpg
 Taggar:
     - sötbröd
 ---

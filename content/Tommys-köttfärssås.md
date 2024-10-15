@@ -1,7 +1,6 @@
 ---
 Titel: Tommys köttfärssås
 Beskrivning: Tommy Myllymäkis recept på köttfärssås med vitt vin, champinjoner och färska tomater.
-Bild: /content/Tommys-köttfärssås/bild.jpg
 Länk: https://www.koket.se/mitt-kok/tommy-myllymaki/tommy-myllymakis-kottfarssas
 Taggar:
     - kött
@@ -9,7 +8,7 @@ Taggar:
 
 ## Ingredienser
 
-4 portioner
+**4 portioner**
 
 - :cut_of_meat: 400 g nötfärs
 - :olive: olivolja, enkel att steka i
