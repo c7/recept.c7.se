@@ -131,14 +131,42 @@ var index = template.Must(template.New("index").Parse(`
 <html>
 	<head>
 		<title>Recept</title>
+		<style>	
+			body {
+				font-size: clamp(32px, 6dvw, 128px);
+				font-family: sans-serif;
+			}
+
+			ul {
+				list-style: none;
+ 				padding-left: 0;
+			}
+
+			h1 { margin-bottom: 0; }
+
+			a:link { color: #7CAF3C; }
+			a:visited { color: #7CAF3C; }
+			a:hover { color: #000000; }
+			a:active { color: #7CAF3C; }
+
+			main {
+					margin: auto;
+    	    width: 95dvw;
+    	    display: flex;
+    	    flex-direction: column;
+    	    align-items: center;
+    	}
+		</style>
 	</head>
 	<body>
-		<h1>Recept</h1>
-		<ul>
-			{{ range . }}
-			<li><h2><a href="{{.Path}}">{{index .Meta "Titel"}}</a></h2></li>
-			{{ end }}
-		</ul>
+		<main>
+			<h1>Recept</h1>
+			<ul>
+				{{ range . }}
+				<li><h2><a href="{{.Path}}">{{index .Meta "Titel"}}</a></h2></li>
+				{{ end }}
+			</ul>
+		</main>
 	</body>
 </html>
 `))
@@ -148,13 +176,36 @@ var recept = template.Must(template.New("recept").Parse(`
 	<head>
 		<title>{{ index .Meta "Titel" }}</title>
 		<meta name="description" content="{{ index .Meta "Beskrivning"}}">
+		<style>	
+			h1 { margin-bottom: 0; }
+			li { margin-bottom: 1em; }
+			img { width: 100%; }
+			
+			a:link { color: #7CAF3C; }
+			a:visited { color: #7CAF3C; }
+			a:hover { color: #000000; }
+			a:active { color: #7CAF3C; }
+			
+			body {
+				font-size: clamp(32px, 4.5dvw, 48px);
+				font-family: sans-serif;
+			}
+
+			main {
+					margin: auto;
+    	    width: 90dvw;
+    	    display: flex;
+    	    flex-direction: column;
+    	    align-items: center;
+    	}
+		</style>
 	</head>
 	<body>
 		{{ if index .Meta "Titel" }}
 		<h1>{{ index .Meta "Titel" }}</h1>
 		{{end}}
 		{{ if index .Meta "Bild" }}
-		<img width="200" src="/content/{{index .Meta "Bild" }}">
+		<img src="{{index .Meta "Bild" }}">
 		{{end}}
 		<main>
 		 {{.Data}}
