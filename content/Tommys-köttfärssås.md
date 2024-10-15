@@ -11,24 +11,24 @@ Taggar:
 
 4 portioner
 
-- 400 g nötfärs
-- olivolja, enkel att steka i
-- 1 gul lök, finhackad
-- 4 klyfta vitlök, finhackade
-- 200 g champinjoner, skivade/rensade
-- 50 g rökt sidfläsk, i små bitar
-- 2 dl vitt vin
-- 2 tomater, tärnade
-- 2 dl vispgrädde
-- 2 tsk färsk timjan, finhackad
-- 2 tsk färsk oregano, finhackad
-- salt
-- svartpeppar, nymalen
+- :cut_of_meat: 400 g nötfärs
+- :olive: olivolja, enkel att steka i
+- :onion: 1 gul lök, finhackad
+- :garlic: 4 klyfta vitlök, finhackade
+- :mushroom: 200 g champinjoner, skivade/rensade
+- :bacon: 50 g rökt sidfläsk, i små bitar
+- :clinking_glasses:  2 dl vitt vin
+- :tomato: 2 tomater, tärnade
+- :milk_glass: 2 dl vispgrädde
+- :herb: 2 tsk färsk timjan, finhackad
+- :herb: 2 tsk färsk oregano, finhackad
+- :salt: salt
+- :black_circle: svartpeppar, nymalen
 
 ## Servering
 
-- spaghetti
-- parmesanost
+- :spaghetti: spaghetti
+- :cheese: parmesanost
 
 ## Gör så här
 

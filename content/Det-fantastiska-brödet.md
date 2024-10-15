@@ -6,17 +6,18 @@ Taggar:
     - bröd
 ---
 
-## Du behöver:
+## Ingredienser
 
-**Ca 24 bröd:**
-- 5 dl fingervarmt vatten
-- 1 dl mjölk
-- 1/2 pkt jäst (25 g)
-- 2 tsk salt
-- 1 msk honung
-- 12 1/2 dl vetemjöl (jag brukar använda vetemjöl special eller manitoba cream)
+**Ca 24 bröd**
 
-## Gör så här:
+- :droplet: 5 dl fingervarmt vatten
+- :milk_glass: 1 dl mjölk
+- :mushroom: 1/2 pkt jäst (25 g)
+- :salt: 2 tsk salt
+- :honey_pot: 1 msk honung
+- 🌾 12 1/2 dl vetemjöl (jag brukar använda vetemjöl special eller manitoba cream)
+
+## Gör så här
 
 1. Smula jästen i en bunke. Lägg i salt och honung. Häll över mjölkvattnet och rör tills jästen löst sig.
 2. Rör ner mjölet. Det ska bli en lös deg.
