@@ -1,5 +1,5 @@
 ---
-Titel: Enkel Pastagratäng
+Titel: Enkel pastagratäng
 Beskrivning:
 Taggar:
     - pasta
