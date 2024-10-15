@@ -11,6 +11,7 @@ import (
 	"strings"
 
 	goldmark "github.com/yuin/goldmark"
+	emoji "github.com/yuin/goldmark-emoji"
 	meta "github.com/yuin/goldmark-meta"
 	parser "github.com/yuin/goldmark/parser"
 )
@@ -36,6 +37,7 @@ func parseRecipes() ([]Recipe, error) {
 	markdown := goldmark.New(
 		goldmark.WithExtensions(
 			meta.Meta,
+			emoji.Emoji,
 		),
 	)
 

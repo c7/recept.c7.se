@@ -7,4 +7,7 @@ require (
 	github.com/yuin/goldmark-meta v1.1.0
 )
 
-require gopkg.in/yaml.v2 v2.3.0 // indirect
+require (
+	github.com/yuin/goldmark-emoji v1.0.4 // indirect
+	gopkg.in/yaml.v2 v2.3.0 // indirect
+)
