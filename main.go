@@ -145,11 +145,12 @@ var index = template.Must(template.New("index").Parse(`
 			
 			ul {
 				list-style: none;
- 				padding-left: 0;
+				padding-left: 0;
+				margin-top: 0;
 			}
 
 			body {
-				font-size: clamp(32px, 6.5dvw, 72px);
+				font-size: clamp(32px, 6.5dvw, 65px);
 				font-family: sans-serif;
 			}
 
@@ -181,11 +182,15 @@ var recept = template.Must(template.New("recept").Parse(`
 		<title>Recept: {{ index .Meta "Titel" }}</title>
 		<meta name="description" content="{{ index .Meta "Beskrivning"}}">
 		<style>	
-			h1 { margin: 0; }
+			h1 { margin: 0.6em 0; line-height: 1; }
+			h2 { margin-top: 1em; }
+			h3 { margin-top: 0; }
 			a:link { color: #7CAF3C; }
 			a:visited { color: #7CAF3C; }
 			a:hover { color: #000000; }
 			a:active { color: #7CAF3C; }
+			ul { list-style-type: none; padding-inline-start: 0; }
+			ul, ol { margin-top: 0; }
 			li { margin-bottom: 1em; }
 			li p { margin-top: 0; }
 			li::marker { font-weight: 900; }
