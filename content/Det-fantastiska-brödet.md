@@ -5,13 +5,13 @@ Taggar:
     - bröd
 ---
 
-## Ingredienser
+_**Ca 24** bröd_
 
-**Ca 24 bröd**
+## Ingredienser
 
 - :droplet: **5 dl** fingervarmt vatten
 - :milk_glass: **1 dl** mjölk
-- :mushroom: **1/2 pkt** jäst (**25 g**)
+- :mushroom: **1/2 paket** jäst (**25 g**)
 - :salt: **2 tsk** salt
 - :honey_pot: **1 msk** honung
 - 🌾 **12 1/2 dl** vetemjöl

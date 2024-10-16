@@ -6,9 +6,9 @@ Taggar:
     - kött
 ---
 
-## Ingredienser
+_**4** portioner_
 
-**4 portioner**
+## Ingredienser
 
 - :cut_of_meat: **400 g** nötfärs
 - :olive: olivolja, enkel att steka i

@@ -7,9 +7,9 @@ Taggar:
     - kyckling
 ---
 
-## Ingredienser
+_**5** portioner_
 
-**5 portioner**
+## Ingredienser
 
 - 🌾 **300 g** pasta
 

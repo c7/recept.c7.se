@@ -5,9 +5,9 @@ Taggar:
     - sötbröd
 ---
 
-## Ingredienser
+_**20 st** bullar_
 
-**20 st bullar**
+## Ingredienser
 
 ### Deg
 
