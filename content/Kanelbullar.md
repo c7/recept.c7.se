@@ -11,8 +11,8 @@ _**20 st** bullar_
 
 ### Deg
 
-- :mushroom: **25 g**  jäst
-- :butter: **50 g**  smör eller margarin
+- :mushroom: **0,5 pkt** jäst för söta degar (**25 g**)
+- :butter: **50 g**  smör
 - :milk_glass: **3 dl**  mjölk
 - :white_circle: **1/2 dl**  strösocker
 - :salt: **1 krm**  salt

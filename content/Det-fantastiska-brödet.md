@@ -11,10 +11,10 @@ _**Ca 24** bröd_
 
 - :droplet: **5 dl** fingervarmt vatten
 - :milk_glass: **1 dl** mjölk
-- :mushroom: **1/2 paket** jäst (**25 g**)
+- :mushroom: **0,5 pkt** jäst _(**25 g**)_
 - :salt: **2 tsk** salt
 - :honey_pot: **1 msk** honung
-- 🌾 **12 1/2 dl** vetemjöl
+- 🌾 **12,5 dl** vetemjöl
 
     _(jag brukar använda manitoba cream)_
 

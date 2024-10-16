@@ -23,11 +23,11 @@ _**5** portioner_
 
 - :cheese: **150 g** fetaost
 - :poultry_leg: färdiggrillad salladskyckling
-- :salt: **1/2 tsk** salt
+- :salt: **0,5 tsk** salt
 - :black_circle: **1 krm** svartpeppar
 - :olive: **2 msk** olivolja
 - :clinking_glasses: **2 msk** vitvinsvinäger
-- :herb: **1/2 dl** hackad bladpersilja
+- :herb: **0,5 dl** hackad bladpersilja
 - :leafy_green: **40 g** blandad sallad (valfritt)
 - :leaves: **1,5 dl** pesto
 
