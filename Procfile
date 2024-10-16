@@ -1,1 +1,1 @@
-web: bin/recept
+web: bin/recept.c7.se
