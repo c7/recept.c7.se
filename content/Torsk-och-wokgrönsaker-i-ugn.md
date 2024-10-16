@@ -6,7 +6,7 @@ Taggar:
 
 ## Ingredienser
 
-- :fish: **1 paket** torsk _(**400 g**)_ tinad
+- :fish: **1 pkt** torsk _(**400 g**)_ tinad
 - :broccoli: **250 g** wokgrönsaker
 - :cheese: **250 g** keso _(liten)_
 - :cheese: **150 g** fetaost _(liten förpackning)_
