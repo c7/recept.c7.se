@@ -149,12 +149,12 @@ var index = template.Must(template.New("index").Parse(`
 			}
 
 			body {
-				font-size: clamp(32px, 4.5dvw, 72px);
+				font-size: clamp(32px, 6.5dvw, 72px);
 				font-family: sans-serif;
 			}
 
 			main {
-				max-width: clamp(100px, 95dvw, 1140px);
+				max-width: clamp(100px, 92dvw, 1140px);
 				margin: auto;
 				width: 95dvw;
 				display: flex;
@@ -192,12 +192,12 @@ var recept = template.Must(template.New("recept").Parse(`
 			em { font-weight: 300; }			
 			
 			body {
-				font-size: clamp(32px, 4.5dvw, 48px);
+				font-size: clamp(32px, 6.5dvw, 48px);
 				font-family: sans-serif;
 			}
 
 			main {
-				max-width: clamp(100px, 95dvw, 1140px);
+				max-width: clamp(100px, 92dvw, 1140px);
  				margin: auto;
  				width: 95dvw;
  				display: flex;
