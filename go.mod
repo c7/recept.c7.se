@@ -1,4 +1,4 @@
-module experiments/dokku/recept
+module github.com/c7/recept.c7.se
 
 go 1.21.3
 
