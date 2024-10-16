@@ -11,18 +11,18 @@ _**4** portioner_
 ## Ingredienser
 
 - :cut_of_meat: **400 g** nötfärs
-- :olive: olivolja, enkel att steka i
+- :olive: olivolja
 - :onion: **1** gul lök, finhackad
 - :garlic: **4** klyftor vitlök, finhackade
-- :mushroom: **200 g** champinjoner, skivade/rensade
+- :mushroom: **200 g** champinjoner, skivade
 - :bacon: **50 g** rökt sidfläsk, i små bitar
 - :clinking_glasses:  **2 dl** vitt vin
 - :tomato: **2** tomater, tärnade
 - :milk_glass: **2 dl** vispgrädde
-- :herb: **2 tsk** färsk timjan, finhackad
-- :herb: **2 tsk** färsk oregano, finhackad
+- :herb: **2 tsk** timjan
+- :herb: **2 tsk** oregano
 - :salt: salt
-- :black_circle: svartpeppar, nymalen
+- :black_circle: svartpeppar
 
 ## Servering
 
