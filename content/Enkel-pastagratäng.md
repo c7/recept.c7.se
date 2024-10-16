@@ -7,7 +7,7 @@ Taggar:
 
 ## Ingredienser
 
-- :spaghetti: 6 dl kokt spagetti
+- :spaghetti: **6 dl** kokt spagetti
 
     _(ca 200g före kokning)_
 
