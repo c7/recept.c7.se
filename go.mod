@@ -1,6 +1,6 @@
 module github.com/c7/recept.c7.se
 
-go 1.21.3
+go 1.23
 
 require (
 	github.com/yuin/goldmark v1.7.7
