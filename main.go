@@ -137,7 +137,8 @@ var index = template.Must(template.New("index").Parse(`
 	<head>
 		<title>Recept</title>
 		<style>	
-			h2 { margin-bottom: 0; }
+			h1 { margin: 0.6em 0; line-height: 1; }
+			h2 { margin-top: 1em; margin-bottom: 0; }
 			a:link { color: #7CAF3C; }
 			a:visited { color: #7CAF3C; }
 			a:hover { color: #000000; }
@@ -150,7 +151,7 @@ var index = template.Must(template.New("index").Parse(`
 			}
 
 			body {
-				font-size: clamp(32px, 6.5dvw, 65px);
+				font-size: clamp(32px, 6.5dvw, 52px);
 				font-family: sans-serif;
 			}
 
@@ -168,7 +169,7 @@ var index = template.Must(template.New("index").Parse(`
 			<h2>Recept</h2>
 			<ul>
 				{{ range . }}
-				<li><h3><a href="{{.Path}}">{{index .Meta "Titel"}}</a></h3></li>
+				<li><h1><a href="{{.Path}}">{{index .Meta "Titel"}}</a></h1></li>
 				{{ end }}
 			</ul>
 		</main>
@@ -183,14 +184,14 @@ var recept = template.Must(template.New("recept").Parse(`
 		<meta name="description" content="{{ index .Meta "Beskrivning"}}">
 		<style>	
 			h1 { margin: 0.6em 0; line-height: 1; }
-			h2 { margin-top: 1em; }
-			h3 { margin-top: 0; }
+			h2 { margin-top: 1em; margin-bottom: 0; }
+			h3 { margin-top: 0.5em; margin-bottom: -0.5em; }
 			a:link { color: #7CAF3C; }
 			a:visited { color: #7CAF3C; }
 			a:hover { color: #000000; }
 			a:active { color: #7CAF3C; }
 			ul { list-style-type: none; padding-inline-start: 0; }
-			ul, ol { margin-top: 0; }
+			ul, ol { margin-top: 1em; }
 			li { margin-bottom: 1em; }
 			li p { margin-top: 0; }
 			li::marker { font-weight: 900; }
