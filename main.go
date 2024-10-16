@@ -187,6 +187,7 @@ var recept = template.Must(template.New("recept").Parse(`
 			a:hover { color: #000000; }
 			a:active { color: #7CAF3C; }
 			li { margin-bottom: 1em; }
+			li p { margin-top: 0; }
 			li::marker { font-weight: 900; }
 			img { width: 100%; }
 			em { font-weight: 300; }			

@@ -7,17 +7,29 @@ Taggar:
 
 ## Ingredienser
 
-- :spaghetti: 6 dl kokt fullkornsspagetti _(ca 200g före kokning)_
+- :spaghetti: 6 dl kokt spagetti
+
+    _(ca 200g före kokning)_
+
 - :onion: 1 gul lök
 - :green_circle: 0,5 grön paprika
 - :red_circle: 0,5 röd paprika
 - :yellow_circle: 0,5 gul paprika
 - :olive: olivolja
+
+    _(rapsolja går också bra)_
+
 - :curry: 1 msk curry
-- :chicken: 2 dl hönsbuljong _(buljongtärning fungerar bra istället)_
+- :chicken: 2 dl hönsbuljong
+
+    _(buljongtärning fungerar bra istället)_
+
 - :milk_glass: 2 dl mellangrädde
 - :salt: salt och svartpeppar
-- :poultry_leg: 1 grillad kyckling _(jag brukar använda salladskyckling istället)_
+- :poultry_leg: 1 grillad kyckling
+
+    _(jag brukar använda salladskyckling)_
+
 - :cheese: 1 dl riven ost
 
 ## Servering
