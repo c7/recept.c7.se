@@ -154,7 +154,7 @@ var index = template.Must(template.New("index").Parse(`
 			}
 
 			main {
-				max-width: clamp(100px, 95dvw, 1600px);
+				max-width: clamp(100px, 95dvw, 1140px);
 				margin: auto;
 				width: 95dvw;
 				display: flex;
@@ -197,7 +197,7 @@ var recept = template.Must(template.New("recept").Parse(`
 			}
 
 			main {
-				max-width: clamp(100px, 95dvw, 1600px);
+				max-width: clamp(100px, 95dvw, 1140px);
  				margin: auto;
  				width: 95dvw;
  				display: flex;
