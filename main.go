@@ -172,7 +172,7 @@ var index = template.Must(template.New("index").Parse(`<!DOCTYPE html>
 				width: 95dvw;
 				display: flex;
 				flex-direction: column;
-    	}
+			}
 		</style>
 	</head>
 	<body>
@@ -219,7 +219,7 @@ var recept = template.Must(template.New("recept").Parse(`<!DOCTYPE html>
  				width: 95dvw;
  				display: flex;
  				flex-direction: column;
-    	}
+			}
 		</style>
 	</head>
 	<body>
