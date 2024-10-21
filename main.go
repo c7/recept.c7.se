@@ -234,5 +234,4 @@ var recept = template.Must(template.New("recept").Parse(`<!DOCTYPE html>
 			{{ .Data }}
 		</main>
 	</body>
-</html>
-`))
+</html>`))
