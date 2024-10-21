@@ -143,7 +143,7 @@ func (app *App) recipe(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-var index = template.Must(template.New("index").Parse(`
+var index = template.Must(template.New("index").Parse(`<!DOCTYPE html>
 <html>
 	<head>
 		<title>Recept</title>
@@ -179,16 +179,15 @@ var index = template.Must(template.New("index").Parse(`
 		<main>
 			<h2>Recept</h2>
 			<ul>
-				{{ range . }}
+				{{- range . }}
 				<li><h1><a href="{{.Path}}">{{index .Meta "Titel"}}</a></h1></li>
-				{{ end }}
+				{{- end }}
 			</ul>
 		</main>
 	</body>
-</html>
-`))
+</html>`))
 
-var recept = template.Must(template.New("recept").Parse(`
+var recept = template.Must(template.New("recept").Parse(`<!DOCTYPE html>
 <html>
 	<head>
 		<title>Recept: {{ index .Meta "Titel" }}</title>
@@ -225,14 +224,14 @@ var recept = template.Must(template.New("recept").Parse(`
 	</head>
 	<body>
 		<main>
-			{{ if index .Meta "Titel" }}
+			{{- if index .Meta "Titel" }}
 			<h2><a href="/">Recept</a></h2>
 			<h1>{{ index .Meta "Titel" }}</h1>
-			{{end}}
-			{{ if index .Meta "Bild" }}
+			{{- end}}
+			{{- if index .Meta "Bild" }}
 			<img src="{{index .Meta "Bild" }}">
-			{{end}}
-		 {{.Data}}
+			{{- end}}
+			{{ .Data }}
 		</main>
 	</body>
 </html>
