@@ -18,20 +18,45 @@ import (
 
 //go:embed all:content
 var content embed.FS
-var contentFS, _ = fs.Sub(content, "content")
 
 const defaultPort = "8284"
 
-func main() {
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = defaultPort
+func getPort() string {
+	if port := os.Getenv("PORT"); port != "" {
+		return port
 	}
 
-	run(port)
+	return defaultPort
 }
 
-func parseRecipes() ([]Recipe, error) {
+func main() {
+	if err := run(getPort()); err != nil {
+		fmt.Println("Error", err)
+		os.Exit(1)
+	}
+}
+
+func run(port string) error {
+	contentFS, err := fs.Sub(content, "content")
+	if err != nil {
+		return err
+	}
+
+	recipes, err := parseRecipes(contentFS)
+	if err != nil {
+		return err
+	}
+
+	app := NewApp(recipes, contentFS)
+	mux := http.NewServeMux()
+	mux.Handle("/", app)
+
+	fmt.Printf("Listening on http://0.0.0.0:%s\n", port)
+
+	return http.ListenAndServe(":"+port, mux)
+}
+
+func parseRecipes(contentFS fs.FS) ([]Recipe, error) {
 	recipes := []Recipe{}
 
 	markdown := goldmark.New(
@@ -44,47 +69,33 @@ func parseRecipes() ([]Recipe, error) {
 		),
 	)
 
-	fs.WalkDir(contentFS, ".", func(path string, d fs.DirEntry, err error) error {
-		if d.Type().IsRegular() && strings.HasSuffix(path, ".md") {
+	return recipes, fs.WalkDir(contentFS, ".",
+		func(path string, d fs.DirEntry, err error) error {
+			if d.Type().IsRegular() && strings.HasSuffix(path, ".md") {
+				source, err := content.ReadFile("content/" + path)
+				if err != nil {
+					return err
+				}
 
-			source, err := content.ReadFile("content/" + path)
-			if err != nil {
-				return err
+				var buf bytes.Buffer
+
+				ctx := parser.NewContext()
+				pwc := parser.WithContext(ctx)
+
+				if err := markdown.Convert(source, &buf, pwc); err != nil {
+					return err
+				}
+
+				recipes = append(recipes, Recipe{
+					Path: path,
+					Data: template.HTML(buf.Bytes()),
+					Meta: meta.Get(ctx),
+				})
 			}
 
-			var buf bytes.Buffer
-
-			context := parser.NewContext()
-			if err := markdown.Convert(source, &buf, parser.WithContext(context)); err != nil {
-				return err
-			}
-
-			recipes = append(recipes, Recipe{
-				Path: path,
-				Data: template.HTML(buf.Bytes()),
-				Meta: meta.Get(context),
-			})
-		}
-
-		return nil
-	})
-
-	return recipes, nil
-}
-
-func run(port string) error {
-	recipes, err := parseRecipes()
-	if err != nil {
-		return err
-	}
-
-	mux := http.NewServeMux()
-
-	mux.Handle("/", NewApp(recipes))
-
-	fmt.Printf("Listening on http://0.0.0.0:%s\n", port)
-
-	return http.ListenAndServe(":"+port, mux)
+			return nil
+		},
+	)
 }
 
 type Recipe struct {
@@ -93,7 +104,7 @@ type Recipe struct {
 	Data template.HTML
 }
 
-func NewApp(recipes []Recipe) *App {
+func NewApp(recipes []Recipe, contentFS fs.FS) *App {
 	return &App{
 		recipes: recipes,
 		content: http.StripPrefix("/content/", http.FileServer(http.FS(contentFS))),
