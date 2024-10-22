@@ -60,6 +60,7 @@ func TestParseApp(t *testing.T) {
 			{"/", 200},
 			{"/favicon.ico", 200},
 			{"/Det-fantastiska-brödet.md", 200},
+			{"/not-found", 404},
 		} {
 			t.Run(tt.path, func(t *testing.T) {
 				w := httptest.NewRecorder()
