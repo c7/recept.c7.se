@@ -21,39 +21,30 @@ var content embed.FS
 
 const defaultPort = "8284"
 
-func getPort() string {
-	if port := os.Getenv("PORT"); port != "" {
+func main() {
+	if err := run(getPort(os.Getenv)); err != nil {
+		fmt.Println("Error", err)
+		os.Exit(1)
+	}
+}
+
+func getPort(getenv func(string) string) string {
+	if port := getenv("PORT"); port != "" {
 		return port
 	}
 
 	return defaultPort
 }
 
-func main() {
-	if err := run(getPort()); err != nil {
-		fmt.Println("Error", err)
-		os.Exit(1)
-	}
-}
-
 func run(port string) error {
-	contentFS, err := fs.Sub(content, "content")
+	app, err := parseApp()
 	if err != nil {
 		return err
 	}
-
-	recipes, err := parseRecipes(contentFS)
-	if err != nil {
-		return err
-	}
-
-	app := NewApp(recipes, contentFS)
-	mux := http.NewServeMux()
-	mux.Handle("/", app)
 
 	fmt.Printf("Listening on http://0.0.0.0:%s\n", port)
 
-	return http.ListenAndServe(":"+port, mux)
+	return http.ListenAndServe(":"+port, app)
 }
 
 func parseRecipes(contentFS fs.FS) ([]Recipe, error) {
@@ -102,6 +93,20 @@ type Recipe struct {
 	Path string
 	Meta map[string]any
 	Data template.HTML
+}
+
+func parseApp() (*App, error) {
+	contentFS, err := fs.Sub(content, "content")
+	if err != nil {
+		return nil, err
+	}
+
+	recipes, err := parseRecipes(contentFS)
+	if err != nil {
+		return nil, err
+	}
+
+	return NewApp(recipes, contentFS), nil
 }
 
 func NewApp(recipes []Recipe, contentFS fs.FS) *App {
