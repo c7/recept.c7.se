@@ -167,7 +167,7 @@ var index = template.Must(template.New("index").Parse(`<!DOCTYPE html>
 			}
 
 			body {
-				font-size: clamp(32px, 6.5dvw, 52px);
+				font-size: clamp(32px, 4.6dvw, 52px);
 				font-family: sans-serif;
 			}
 
@@ -214,7 +214,7 @@ var recept = template.Must(template.New("recept").Parse(`<!DOCTYPE html>
 			em { font-weight: 300; }			
 			
 			body {
-				font-size: clamp(32px, 6.5dvw, 52px);
+				font-size: clamp(32px, 4.6dvw, 52px);
 				font-family: sans-serif;
 			}
 
