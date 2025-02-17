@@ -15,7 +15,7 @@ _**4** portioner_
 - :cheese: **150 g** riven gratängost
 - :poultry_leg: **200 g** färdiggrillad salladskyckling
 - :milk_glass: **2 dl** crème fraiche
-- :flatbread: **4 stk** mellanstora tortillas
+- :flatbread: **8 stk** små tortillabröd
 
 ## Gör så här
 
@@ -23,7 +23,7 @@ _**4** portioner_
 2. Hacka gul och vitlök.
 3. Fräs den hackade löken.
 4. Hacka kycklingen i mindre bitar.
-5. Rör ner crème fraiche, kycklingbitarna, den frästa löken, **1 tsk** salt och **1 tsk** sambal oelek i en skål.
-6. Fördela röran på de fyra tortillabröden.
-7. Strö över den rivna osten.
+5. Rör ner crème fraiche, kycklingbitarna, den frästa löken, hälften av osten, **1 tsk** salt och **1 tsk** sambal oelek i en skål.
+6. Fördela röran på de åtta tortillabröden.
+7. Strö över resten av den rivna osten.
 8. Gratinera i ugnen **ca 10 min**.
