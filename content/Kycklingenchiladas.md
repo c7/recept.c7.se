@@ -1,4 +1,4 @@
---
+---
 Titel: Kycklingenchiladas
 Taggar:
     - kyckling
@@ -9,9 +9,7 @@ _**4** portioner_
 ## Ingredienser
 
 - :onion: **1** gul lök, finhackad
-- :garlic: **4 klyftor** vitlök, finhackade
-- :salt: **1 tsk**  salt
-- :hot_pepper: **1 tsk**  sambal oelek
+- :hot_pepper: **1-2 tsk** sambal oelek
 - :cheese: **150 g** riven gratängost
 - :poultry_leg: **200 g** färdiggrillad salladskyckling
 - :milk_glass: **2 dl** crème fraiche
@@ -20,10 +18,9 @@ _**4** portioner_
 ## Gör så här
 
 1. Sätt ugnen på **200°C**.
-2. Hacka gul och vitlök.
-3. Fräs den hackade löken.
-4. Hacka kycklingen i mindre bitar.
-5. Rör ner crème fraiche, kycklingbitarna, den frästa löken, hälften av osten, **1 tsk** salt och **1 tsk** sambal oelek i en skål.
-6. Fördela röran på de åtta tortillabröden.
-7. Strö över resten av den rivna osten.
-8. Gratinera i ugnen **ca 10 min**.
+2. Hacka och fräs löken.
+3. Skär kycklingen i mindre bitar.
+4. Rör ner crème fraiche, kycklingbitarna, den frästa löken, hälften av osten, **1-2 tsk** sambal oelek i en skål.
+5. Fördela röran på de åtta tortillabröden.
+6. Strö över resten av den rivna osten.
+7. Gratinera i ugnen **ca 10 min**.
