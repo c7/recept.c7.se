@@ -8,6 +8,7 @@ import (
 	"io/fs"
 	"net/http"
 	"os"
+	"slices"
 	"strings"
 
 	goldmark "github.com/yuin/goldmark"
@@ -93,6 +94,7 @@ type Recipe struct {
 	Path string
 	Meta map[string]any
 	Data template.HTML
+	List bool
 }
 
 func parseApp() (*App, error) {
@@ -136,7 +138,19 @@ func (app *App) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func (app *App) index(w http.ResponseWriter, _ *http.Request) {
-	index.ExecuteTemplate(w, "index", app.recipes)
+	listed := slices.Collect(func(yield func(Recipe) bool) {
+		for _, r := range app.recipes {
+			if unlisted, ok := r.Meta["Olistad"].(bool); ok && unlisted {
+				return
+			}
+
+			if !yield(r) {
+				return
+			}
+		}
+	})
+
+	index.ExecuteTemplate(w, "index", listed)
 }
 
 func (app *App) recipe(w http.ResponseWriter, r *http.Request) {
