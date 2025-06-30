@@ -1,4 +1,5 @@
 ---
+Olistad: true
 Titel: Skolans ost- och skinksås
 Beskrivning: Den krämiga ost- och skinksåsen som serverades i skolan var mångas favorit.
 Taggar:
