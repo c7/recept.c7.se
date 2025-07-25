@@ -16,6 +16,7 @@ _**3** portioner_
 - :seedling: **1** purjolök _(ca 300 g)_
 - 🍲 **1** buljongtärning
 - :droplet: **4 dl** vatten
+- 🌾 **3 dl** snabbmakaroner
 - :tomato: **3 msk** tomatketchup
 - :salt: salt
 - :black_circle: svartpeppar
