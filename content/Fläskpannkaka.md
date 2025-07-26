@@ -24,6 +24,6 @@ _**4** portioner_
 
 1. Sätt ugnen på **200°C**.
 2. Häll hälften av mjölken i en skål. Vispa ner mjöl och salt till en jämn smet. Häll i resten av mjölken. Vispa sist ner äggen.
-3. Skär fläsket i små tärningar. Bryn dem i en stekpanna. Fördela fläsket och stekfettet i en långpanna, 30x40 cm gärna med bakplåtspapper, fukta plåten lite och lägg på bakplåtspappret så ligger det still. Häll smeten över fläsktärningarna.
-4. Grädda i mitten av ugnen **ca 25 min**. Servera med lingonsylt.
-
+3. Skär fläsket i små tärningar och bryn det i stekpanna. Blanda ner fläsket i smeten.
+4. Häll smeten i smord långpanna (**ca 30x40cm**).
+5. Grädda i mitten av ugnen **ca 25 min**. Servera med lingonsylt.
