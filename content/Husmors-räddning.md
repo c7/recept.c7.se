@@ -21,10 +21,6 @@ _**3** portioner_
 - :salt: salt
 - :black_circle: svartpeppar
 
-## Servering
-
-- :herb: persilja
-
 ## Gör så här
 
 1. Bryn köttfärsen i gryta med lite matfett.
@@ -33,5 +29,5 @@ _**3** portioner_
 4. Tillsätt **3 dl** okokta snabbmakaroner.
 5. Tillsätt ungefär **3 msk** tomatketchup.
 6. Rör om väl, koka tills makaronerna är mjuka.
-7. Avsmaka med **salt** och **peppar**, strö gärna över lite persilja.
+7. Avsmaka med **salt** och **peppar**.
 8. Servera ur grytan.
