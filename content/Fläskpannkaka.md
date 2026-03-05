@@ -1,4 +1,4 @@
---
+---
 Titel: Fläskpannkaka
 Beskrivning: Fläskpannkaka, den fenomenala klassikern som alla gillar. Pannkakssmeten fyller du med knaprigt fläskkött eller bacon som ger härlig sälta till den mjuka ugnspannkakan och ett fint tuggmotstånd. Bryt gärna av med lite lingonsylt vid servering.
 Länk: https://www.ica.se/recept/flaskpannkaka-712880/
