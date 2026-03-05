@@ -141,7 +141,7 @@ func (app *App) index(w http.ResponseWriter, _ *http.Request) {
 	listed := slices.Collect(func(yield func(Recipe) bool) {
 		for _, r := range app.recipes {
 			if unlisted, ok := r.Meta["Olistad"].(bool); ok && unlisted {
-				return
+				continue
 			}
 
 			if !yield(r) {
